@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ravitail — Mentions légales</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Epilogue:wght@400;600;700&display=swap">
+<style>
+:root{
+  --fond:#f5f2e9; --surface:#fffdf8; --encre:#26332a; --douce:#6b675c; --bord:#e5e0d2;
+  --prim:#b8924a; --prim-d:#9a7635; --vert:#5a7355; --vert-d:#45583f;
+  --titre:"Fraunces",Georgia,serif; --corps:"Epilogue",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --fond:#1c211c; --surface:#262c25; --encre:#eef0ea; --douce:#9aa39a; --bord:#38402f; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --fond:#1c211c; --surface:#262c25; --encre:#eef0ea; --douce:#9aa39a; --bord:#38402f; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--encre);font-family:var(--corps);line-height:1.6;font-size:16px}
+header{background:linear-gradient(120deg,var(--vert),var(--vert-d));color:#fff;
+  padding:calc(28px + env(safe-area-inset-top,0px)) 16px 24px;text-align:center}
+header h1{font-family:var(--titre);font-weight:800;font-size:30px;margin:0 0 4px;letter-spacing:-.02em}
+header p{margin:0;opacity:.9;font-size:14.5px}
+nav{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--bord);
+  display:flex;gap:4px;justify-content:center;padding:8px 12px;flex-wrap:wrap}
+nav button{border:1px solid var(--bord);background:transparent;color:var(--encre);font-family:var(--corps);
+  font-weight:700;font-size:14px;padding:8px 16px;border-radius:3px;cursor:pointer;transition:.15s}
+nav button.on{background:var(--vert);color:#fff;border-color:var(--vert)}
+main{max-width:720px;margin:0 auto;padding:28px 16px calc(48px + env(safe-area-inset-bottom,0px))}
+article[hidden]{display:none}
+h2{font-family:var(--titre);font-weight:800;font-size:24px;color:var(--vert-d);margin:28px 0 8px;line-height:1.25}
+article>h2:first-child{margin-top:0}
+h3{font-family:var(--titre);font-weight:600;font-size:18px;margin:22px 0 6px}
+p,li{color:var(--encre)}
+a{color:var(--prim-d);word-break:break-word}
+.maj{display:inline-block;background:var(--surface);border:1px solid var(--bord);border-radius:99px;
+  padding:4px 12px;font-size:13px;color:var(--douce);margin-bottom:18px}
+.todo{background:#f7f0d8;border:1px solid var(--prim);border-radius:3px;padding:2px 7px;font-weight:700;color:var(--prim-d)}
+hr{border:0;border-top:1px solid var(--bord);margin:28px 0}
+footer{text-align:center;color:var(--douce);font-size:13px;padding:24px 16px calc(32px + env(safe-area-inset-bottom,0px))}
+[data-theme="dark"] .todo, :root:not([data-theme="light"]) .todo{background:#3a3418}
+</style>
+</head>
+<body>
+<header>
+  <h1>Ravitail</h1>
+  <p>Mentions légales · Éditées par yumzg (Alexandre Boivin)</p>
+</header>
+
+<nav>
+  <button id="b-conf" class="on" onclick="montre('conf')">Confidentialité</button>
+  <button id="b-cgv" onclick="montre('cgv')">CGV</button>
+</nav>
+
+<main>
+  <!-- ===================== CONFIDENTIALITÉ ===================== -->
+  <article id="conf">
+    <h2>Politique de confidentialité</h2>
+    <span class="maj">Dernière mise à jour : 11 octobre 2026</span>
+    <p>La présente politique décrit comment l'application mobile <strong>Ravitail</strong> (« l'Application ») traite vos informations. Ravitail a été conçue pour fonctionner <strong>sans compte</strong> et en <strong>stockant vos données directement sur votre appareil</strong>.</p>
+
+    <h3>1. Éditeur responsable</h3>
+    <p>L'Application est éditée par <strong>Alexandre Boivin</strong>, entrepreneur individuel (micro-entreprise), exerçant sous le nom commercial <strong>yumzg</strong>. SIREN : <span class="todo">SIREN à compléter</span>. Contact : <a href="mailto:yumzg.edit@gmail.com">yumzg.edit@gmail.com</a>.</p>
+
+    <h3>2. Principe général : vos données restent sur votre téléphone</h3>
+    <p>Ravitail <strong>ne possède aucun serveur</strong> qui collecterait vos informations. L'ensemble des données saisies (produits, lieux, quantités, dates, photos, listes de courses, recettes enregistrées, réglages) est <strong>enregistré localement sur votre appareil</strong>.</p>
+    <ul>
+      <li>Nous <strong>n'avons pas accès</strong> à ces données.</li>
+      <li>Elles ne sont <strong>pas transmises</strong> à l'éditeur ni partagées à des fins commerciales.</li>
+      <li>Désinstaller l'Application ou effacer ses données <strong>supprime définitivement</strong> ces informations de votre appareil.</li>
+    </ul>
+
+    <h3>3. Données transmises à des services tiers</h3>
+    <p>Pour certaines fonctionnalités, l'Application communique avec des services externes. Seules les informations strictement nécessaires sont transmises, au moment où vous utilisez la fonctionnalité.</p>
+    <p><strong>Open Food Facts</strong> — Lorsque vous scannez un code-barres, celui-ci est envoyé à l'API publique Open Food Facts pour récupérer les informations du produit. Aucune donnée vous identifiant n'est transmise. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Politique du service</a>.</p>
+    <p><strong>Google Gemini (recettes IA — Premium)</strong> — Si vous utilisez la génération de recettes par IA, la liste des produits de votre stock et vos préférences de recette sont envoyées à l'API Google Gemini. Aucune donnée d'identification personnelle n'est transmise, et uniquement si vous déclenchez vous-même la génération. <a href="https://ai.google.dev/terms" target="_blank" rel="noopener">Conditions du service</a>.</p>
+
+    <h3>4. Permissions de l'appareil</h3>
+    <ul>
+      <li><strong>Appareil photo</strong> : pour scanner les codes-barres et photographier vos produits/lieux. Les photos restent sur votre appareil.</li>
+      <li><strong>Accès aux images</strong> : pour choisir une photo existante comme vignette.</li>
+    </ul>
+    <p>Vous pouvez révoquer ces autorisations à tout moment dans les réglages du téléphone.</p>
+
+    <h3>5. Absence de publicité et de traçage</h3>
+    <p>Ravitail <strong>ne contient aucune publicité</strong>, aucun traceur publicitaire ni cookie de profilage. Aucune donnée n'est vendue ni louée.</p>
+
+    <h3>6. Achats intégrés (Premium)</h3>
+    <p>L'accès au Premium peut être proposé via un achat intégré géré par <strong>Google Play</strong>. Le paiement et la facturation sont traités par Google ; l'éditeur ne reçoit ni ne stocke vos coordonnées bancaires. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de Google</a>.</p>
+
+    <h3>7. Enfants</h3>
+    <p>L'Application ne collecte sciemment aucune donnée auprès d'enfants. Aucune donnée personnelle n'est collectée par l'éditeur.</p>
+
+    <h3>8. Vos droits</h3>
+    <p>L'éditeur ne détenant aucune de vos données, celles-ci restent sous votre entier contrôle sur votre appareil. Conformément au RGPD, vous disposez de droits d'accès, de rectification et de suppression. Pour toute demande : <a href="mailto:yumzg.edit@gmail.com">yumzg.edit@gmail.com</a>.</p>
+
+    <h3>9. Modifications</h3>
+    <p>Cette politique peut être mise à jour. La date de dernière mise à jour figure en haut de cette page.</p>
+  </article>
+
+  <!-- ===================== CGV ===================== -->
+  <article id="cgv" hidden>
+    <h2>Conditions Générales de Vente et d'Utilisation</h2>
+    <span class="maj">Dernière mise à jour : 11 octobre 2026</span>
+    <p>Les présentes CGV régissent l'utilisation de l'application <strong>Ravitail</strong> et l'achat de ses fonctionnalités payantes. En installant et utilisant l'Application, vous acceptez les présentes CGV.</p>
+
+    <h3>1. Éditeur</h3>
+    <p><strong>Alexandre Boivin</strong>, entrepreneur individuel (micro-entreprise), nom commercial <strong>yumzg</strong>. SIREN : <span class="todo">SIREN à compléter</span>. Contact : <a href="mailto:yumzg.edit@gmail.com">yumzg.edit@gmail.com</a>.</p>
+
+    <h3>2. Objet de l'Application</h3>
+    <p>Ravitail est une application de <strong>gestion de stock domestique</strong> : scanner et répertorier des produits (alimentaires, hygiène, entretien), les organiser par lieux, suivre quantités et dates, générer des listes de courses et obtenir des suggestions de recettes (dont par IA en Premium). Les informations affichées sont fournies <strong>à titre indicatif</strong>.</p>
+
+    <h3>3. Version gratuite et Premium</h3>
+    <p>L'Application propose une <strong>version gratuite</strong> (fonctionnalités essentielles) et une <strong>version Premium</strong> payante (recettes IA, lieux et listes illimités, listes récurrentes, produits essentiels). L'éditeur peut faire évoluer cette répartition sans remettre en cause un achat déjà effectué.</p>
+
+    <h3>4. Prix et achat</h3>
+    <p>Le prix du Premium est indiqué dans l'Application et sur le Google Play Store, en euros TTC. L'achat s'effectue via les <strong>achats intégrés de Google Play</strong> ; le paiement et la facturation sont traités par Google. L'éditeur ne collecte pas vos coordonnées bancaires.</p>
+
+    <h3>5. Rétractation et remboursement</h3>
+    <p>S'agissant d'un contenu numérique fourni immédiatement, l'exécution commence dès la validation de l'achat ; vous renoncez le cas échéant à votre droit de rétractation une fois le contenu débloqué (art. L.221-28 du Code de la consommation). Les remboursements relèvent de la politique de Google Play. Réclamations relatives à l'Application : <a href="mailto:yumzg.edit@gmail.com">yumzg.edit@gmail.com</a>.</p>
+
+    <h3>6. Utilisation</h3>
+    <p>Vous vous engagez à utiliser l'Application conformément à sa destination et à la loi. Il est interdit de contourner le déblocage du Premium, de décompiler l'Application ou d'en faire un usage frauduleux.</p>
+
+    <h3>7. Données personnelles</h3>
+    <p>Le traitement de vos données est décrit dans la Politique de confidentialité (onglet ci-dessus). En résumé : stockage <strong>local</strong> sur votre appareil, aucun accès par l'éditeur, transmission limitée aux services tiers nécessaires (Open Food Facts, Google Gemini).</p>
+
+    <h3>8. Responsabilité</h3>
+    <p>L'Application est un outil d'aide à l'organisation. L'éditeur ne saurait être tenu responsable de l'exactitude des informations produits issues de bases externes, des suggestions de recettes générées par IA, ni de la perte de données consécutive à une désinstallation ou défaillance de l'appareil.</p>
+    <p><strong>Les dates et alertes affichées sont indicatives : vérifiez toujours les dates réelles inscrites sur vos produits avant consommation, et tenez compte des allergies, intolérances et régimes alimentaires.</strong> L'Application est fournie « en l'état », dans les limites permises par la loi.</p>
+
+    <h3>9. Propriété intellectuelle</h3>
+    <p>L'Application, son nom, son logo et ses éléments graphiques sont la propriété de l'éditeur. Toute reproduction non autorisée est interdite.</p>
+
+    <h3>10. Modification des CGV</h3>
+    <p>L'éditeur peut modifier les présentes CGV ; la version applicable est celle en vigueur à la date d'utilisation. Date de mise à jour en haut de page.</p>
+
+    <h3>11. Droit applicable et litiges</h3>
+    <p>Les présentes CGV sont soumises au <strong>droit français</strong>. En cas de litige, après tentative de résolution amiable (<a href="mailto:yumzg.edit@gmail.com">yumzg.edit@gmail.com</a>), les tribunaux français sont compétents. Vous pouvez recourir à un médiateur de la consommation en cas de différend non résolu.</p>
+  </article>
+</main>
+
+<footer>© 2026 yumzg — Ravitail · Contact : yumzg.edit@gmail.com</footer>
+
+<script>
+function montre(id){
+  document.getElementById('conf').hidden = id!=='conf';
+  document.getElementById('cgv').hidden  = id!=='cgv';
+  document.getElementById('b-conf').classList.toggle('on', id==='conf');
+  document.getElementById('b-cgv').classList.toggle('on', id==='cgv');
+  history.replaceState(null,'', id==='cgv' ? '#cgv' : '#confidentialite');
+  window.scrollTo(0,0);
+}
+if (location.hash.indexOf('cgv')>-1) montre('cgv');
+</script>
+</body>
+</html>
